@@ -1,0 +1,13 @@
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+}
+
+/* Smooth scroll offset for fixed header */
+.section {
+  scroll-margin-top: 80px;
+}

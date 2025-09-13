@@ -1,0 +1,476 @@
+.about {
+  background: linear-gradient(135deg, var(--gray-50) 0%, var(--secondary-white) 100%);
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gray-200), transparent);
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header h2 {
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Differentiators Grid */
+.differentiators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.differentiator-card {
+  background: var(--secondary-white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.differentiator-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-orange));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.differentiator-card:hover {
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-xl);
+}
+
+.differentiator-card:hover::before {
+  opacity: 1;
+}
+
+/* Differentiator Header */
+.differentiator-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.differentiator-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--primary-blue), #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-white);
+  transition: all 0.3s ease;
+}
+
+.differentiator-card:hover .differentiator-icon {
+  background: linear-gradient(135deg, var(--accent-orange), #ea580c);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.differentiator-stats {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.differentiator-card:hover .differentiator-stats {
+  background: rgba(249, 115, 22, 0.1);
+  color: var(--accent-orange);
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+/* Differentiator Content */
+.differentiator-content {
+  margin-bottom: 1.5rem;
+}
+
+.differentiator-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.differentiator-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--gray-600);
+}
+
+.differentiator-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--gray-400);
+  transition: all 0.3s ease;
+}
+
+.differentiator-card:hover .differentiator-arrow {
+  color: var(--primary-blue);
+  transform: translateX(5px);
+}
+
+/* About Content */
+.about-content {
+  margin-bottom: 4rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--gray-600);
+}
+
+/* Achievements */
+.about-achievements {
+  margin-top: 2.5rem;
+}
+
+.about-achievements h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+}
+
+.achievements-list {
+  list-style: none;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: var(--gray-700);
+  font-weight: 500;
+}
+
+.achievement-item svg {
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+/* About Visual */
+.about-visual {
+  position: relative;
+  height: 500px;
+}
+
+.visual-card {
+  position: absolute;
+  background: var(--secondary-white);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-200);
+  transition: all 0.3s ease;
+}
+
+.visual-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.main-card {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  max-width: 85%;
+}
+
+.secondary-card {
+  bottom: 80px;
+  right: 40px;
+  left: 40px;
+  z-index: 1;
+  background: linear-gradient(135deg, var(--primary-blue), #3b82f6);
+  color: var(--secondary-white);
+}
+
+.secondary-card .card-header h4 {
+  color: var(--secondary-white);
+}
+
+.secondary-card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(37, 99, 235, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue);
+}
+
+.secondary-card .card-icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--secondary-white);
+}
+
+.card-header h4 {
+  font-size: 1.125rem;
+  margin: 0;
+  color: var(--primary-dark);
+}
+
+.visual-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Stats Overlay */
+.stats-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 2rem;
+  z-index: 3;
+}
+
+.stat-item {
+  background: var(--secondary-white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-200);
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-orange);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* About CTA */
+.about-cta {
+  background: linear-gradient(135deg, var(--primary-dark), var(--gray-800));
+  border-radius: var(--radius-xl);
+  padding: 4rem 3rem;
+  color: var(--secondary-white);
+}
+
+.about-cta h3 {
+  color: var(--secondary-white);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about-cta p {
+  color: var(--gray-300);
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+}
+
+.about-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-visual {
+    height: 400px;
+    order: -1;
+  }
+
+  .main-card {
+    max-width: 90%;
+  }
+
+  .secondary-card {
+    bottom: 60px;
+    right: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .differentiators-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .differentiator-card {
+    padding: 2rem;
+  }
+
+  .differentiator-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-text h3 {
+    font-size: 1.75rem;
+  }
+
+  .about-visual {
+    height: 350px;
+  }
+
+  .visual-card {
+    padding: 1.5rem;
+  }
+
+  .stats-overlay {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .about-cta {
+    padding: 3rem 2rem;
+  }
+
+  .about-cta h3 {
+    font-size: 1.75rem;
+  }
+
+  .about-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .differentiator-card {
+    padding: 1.5rem;
+  }
+
+  .differentiator-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .about-achievements {
+    margin-top: 2rem;
+  }
+
+  .achievement-item {
+    font-size: 0.9rem;
+  }
+
+  .about-visual {
+    height: 300px;
+  }
+
+  .main-card {
+    max-width: 95%;
+  }
+
+  .secondary-card {
+    bottom: 40px;
+    right: 10px;
+    left: 10px;
+  }
+
+  .stats-overlay {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-cta {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .about-cta h3 {
+    font-size: 1.5rem;
+  }
+}
