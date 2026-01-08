@@ -19,15 +19,18 @@ import rohitImg from '../assets/rohit shaw.png'
 import bharatImg from '../assets/bharat panchal.png'
 import ritikBImg from '../assets/ritik baheti.png'
 import prashantImg from '../assets/prashant singh iit bombay.png'
+import vivaanImg from '../assets/vivaan gupta.png'
+import ajayImg from '../assets/ajay singh.jpg'
+import rohitNagarImg from '../assets/Rohit Nagar.png'
+import aryanZaveriImg from '../assets/Aryan Zaveri.png'
+import aryanBhaiyaImg from '../assets/Aryan Bhaiya iit bombay.png'
+import jeeNerdsImg from '../assets/Jee Nerds.png'
+import iqlipseNovaImg from '../assets/iqlipse Nova.png'
+import shubhamKumarImg from '../assets/Shubham Kumar NIT Kurukshetra.png'
+import jazbaatiImg from '../assets/Jazbaati Saxena.png'
 
 const CreatorPartners = () => {
   const creators = [
-    {
-      name: "Snehit Mishra",
-      niche: "Tech Reviews & Tutorials",
-      description: "Leading tech content creator specializing in gadget reviews and programming tutorials",
-      image: snehitImg
-    },
     {
       name: "Sankalp Jauhari",
       niche: "Educational Content",
@@ -35,10 +38,46 @@ const CreatorPartners = () => {
       image: sankalpImg
     },
     {
-      name: "Harshita Singh",
-      niche: "Lifestyle & Tech",
-      description: "Popular lifestyle and technology content creator with engaged audience",
-      image: harshitaImg
+      name: "Ajay Singh",
+      niche: "Tech & Education",
+      description: "Educational content creator focused on technology and student success",
+      image: ajayImg
+    },
+    {
+      name: "Snehit Mishra",
+      niche: "Tech Reviews & Tutorials",
+      description: "Leading tech content creator specializing in gadget reviews and programming tutorials",
+      image: snehitImg
+    },
+    {
+      name: "Self Padhai - Rohit Nagar",
+      niche: "Self-Study & Motivation",
+      description: "Motivational content for self-learners and exam preparation",
+      image: rohitNagarImg
+    },
+    {
+      name: "Aryan Zaveri",
+      niche: "Tech & Programming",
+      description: "Programming tutorials and technology insights for students",
+      image: aryanZaveriImg
+    },
+    {
+      name: "Aryan Bhaiya IIT Bombay",
+      niche: "IIT JEE Preparation",
+      description: "IIT Bombay student sharing JEE strategies and academic guidance",
+      image: aryanBhaiyaImg
+    },
+    {
+      name: "Akash Jaiswal",
+      niche: "Tech News & Reviews",
+      description: "Tech enthusiast covering latest gadgets and technology trends",
+      image: akashImg
+    },
+    {
+      name: "JEE Nerds",
+      niche: "JEE Preparation",
+      description: "Comprehensive JEE preparation content and study strategies",
+      image: jeeNerdsImg
     },
     {
       name: "Eknoor Singh",
@@ -47,10 +86,34 @@ const CreatorPartners = () => {
       image: eknoorImg
     },
     {
-      name: "Akash Jaiswal",
-      niche: "Tech News & Reviews",
-      description: "Tech enthusiast covering latest gadgets and technology trends",
-      image: akashImg
+      name: "Rohit Shaw",
+      niche: "Web Development",
+      description: "Frontend developer creating modern web development content",
+      image: rohitImg
+    },
+    {
+      name: "Harshita Singh",
+      niche: "Lifestyle & Tech",
+      description: "Popular lifestyle and technology content creator with engaged audience",
+      image: harshitaImg
+    },
+    {
+      name: "Iqlipse Nova",
+      niche: "JEE Simplified",
+      description: "Simplifying JEE concepts with innovative teaching methods",
+      image: iqlipseNovaImg
+    },
+    {
+      name: "Shubham Kumar NIT Kurukshetra",
+      niche: "Engineering & Tech",
+      description: "NIT student sharing engineering insights and tech tutorials",
+      image: shubhamKumarImg
+    },
+    {
+      name: "Jazbaati Saxena",
+      niche: "Motivational Content",
+      description: "Motivational speaker creating inspiring educational content",
+      image: jazbaatiImg
     },
     {
       name: "College wali didi",
@@ -83,12 +146,6 @@ const CreatorPartners = () => {
       image: nitianImg
     },
     {
-      name: "Rohit Shaw",
-      niche: "Web Development",
-      description: "Frontend developer creating modern web development content",
-      image: rohitImg
-    },
-    {
       name: "Bharat Panchal",
       niche: "Tech Entrepreneurship",
       description: "Entrepreneur sharing startup insights and business technology",
@@ -101,10 +158,16 @@ const CreatorPartners = () => {
       image: ritikBImg
     },
     {
-      name: "Prashant Singh",
-      niche: "Mobile App Development",
-      description: "Mobile developer creating apps and sharing development insights",
+      name: "Prashant Singh IIT Bombay",
+      niche: "IIT JEE & College Life",
+      description: "IIT Bombay student sharing JEE preparation and campus experiences",
       image: prashantImg
+    },
+    {
+      name: "Vivaan Gupta",
+      niche: "Tech & Motivation",
+      description: "Technology content with motivational insights for students",
+      image: vivaanImg
     }
   ]
 

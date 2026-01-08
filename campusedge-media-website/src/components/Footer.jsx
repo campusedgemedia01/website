@@ -93,16 +93,10 @@ const Footer = () => {
               <h4 className="section-title">Get in Touch</h4>
               <div className="contact-info">
                 <div className="contact-item">
-                  <strong>Phone:</strong>
-                  <a href="tel:+917060306195" className="contact-link">
-                    +91 7060306195
-                  </a>
-                </div>
-                <div className="contact-item">
                   <strong>Email:</strong>
-                  <span className="contact-text">
-                    Get in touch for email details
-                  </span>
+                  <a href="mailto:campusedgemedia01@gmail.com" className="contact-link">
+                    campusedgemedia01@gmail.com
+                  </a>
                 </div>
                 <div className="contact-item">
                   <strong>Location:</strong>

@@ -1,17 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Mail, MapPin, Send } from 'lucide-react'
 import './Contact.css'
 
 const Contact = () => {
 
   const contactInfo = [
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "+91 7060306195",
-      description: "Available Monday to Friday, 9 AM - 6 PM IST"
-    },
     {
       icon: Mail,
       title: "Email",

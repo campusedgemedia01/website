@@ -4,16 +4,16 @@ import { GraduationCap, Award, Users, ArrowRight } from 'lucide-react'
 import './UniversityPartners.css'
 
 const UniversityPartners = () => {
-  const universities = [
+  const partners = [
     {
       name: "Vedam School of Technology",
-      type: "Engineering & Technology",
-      focus: "Innovation in Tech Education"
+      type: "Technology Education",
+      focus: "Innovation in Tech"
     },
     {
       name: "Polaris School of Technology", 
       type: "Computer Science & AI",
-      focus: "Cutting-edge Research"
+      focus: "Cutting-edge Learning"
     },
     {
       name: "Scaler School of Technology",
@@ -23,27 +23,82 @@ const UniversityPartners = () => {
     {
       name: "Newton School of Technology",
       type: "Full-Stack Development",
-      focus: "Practical Learning"
+      focus: "Practical Training"
+    },
+    {
+      name: "Masai College",
+      type: "Tech Education",
+      focus: "Career-Focused Learning"
+    },
+    {
+      name: "LPU",
+      type: "University",
+      focus: "Comprehensive Education"
     },
     {
       name: "Quantum University",
       type: "Technology & Sciences",
-      focus: "Quantum Computing Research"
+      focus: "Future-Ready Skills"
     },
     {
-      name: "MIT WPU",
-      type: "Engineering & Management",
+      name: "Rishihood University",
+      type: "Liberal Education",
       focus: "Holistic Development"
     },
     {
-      name: "DTU",
-      type: "Engineering & Technology",
+      name: "Allen Kota",
+      type: "Test Preparation",
+      focus: "JEE & NEET Excellence"
+    },
+    {
+      name: "Motion Kota",
+      type: "Coaching Institute",
+      focus: "Competitive Exam Prep"
+    },
+    {
+      name: "PW Disha Publication",
+      type: "Educational Content",
+      focus: "Study Materials"
+    },
+    {
+      name: "Oswaal Books",
+      type: "Educational Publisher",
+      focus: "Quality Publications"
+    },
+    {
+      name: "MTG Books",
+      type: "Educational Publisher",
+      focus: "Exam Preparation"
+    },
+    {
+      name: "Arihant",
+      type: "Publishing House",
       focus: "Academic Excellence"
     },
     {
-      name: "NSUT",
-      type: "Technology & Engineering",
-      focus: "Technical Innovation"
+      name: "Rancho Revision",
+      type: "Exam Preparation",
+      focus: "Quick Revision"
+    },
+    {
+      name: "Unacademy",
+      type: "Ed-Tech Platform",
+      focus: "Online Learning"
+    },
+    {
+      name: "Aakash",
+      type: "Coaching Institute",
+      focus: "Medical & Engineering"
+    },
+    {
+      name: "Vedantu",
+      type: "Online Education",
+      focus: "Live Learning Platform"
+    },
+    {
+      name: "Masters Union",
+      type: "Business School",
+      focus: "Entrepreneurship & MBA"
     }
   ]
 
@@ -83,12 +138,12 @@ const UniversityPartners = () => {
         >
           <div className="section-badge">
             <GraduationCap size={20} />
-            <span>Educational Excellence</span>
+            <span>Trusted Partnerships</span>
           </div>
-          <h2>University Partners</h2>
+          <h2>Partners We Have Worked With</h2>
           <p className="large-text">
-            Strategic partnerships with leading educational institutions that share our commitment 
-            to innovation, technology, and preparing the next generation of digital leaders.
+            Proud to collaborate with leading educational institutions, coaching centers, 
+            publishers, and ed-tech platforms to deliver exceptional marketing results and reach millions of students.
           </p>
         </motion.div>
 
@@ -99,7 +154,7 @@ const UniversityPartners = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {universities.map((university, index) => (
+          {partners.map((partner, index) => (
             <motion.div 
               key={index} 
               className="university-card"
@@ -120,9 +175,9 @@ const UniversityPartners = () => {
               </div>
 
               <div className="university-content">
-                <h4 className="university-name">{university.name}</h4>
-                <div className="university-type">{university.type}</div>
-                <p className="university-focus">{university.focus}</p>
+                <h4 className="university-name">{partner.name}</h4>
+                <div className="university-type">{partner.type}</div>
+                <p className="university-focus">{partner.focus}</p>
               </div>
 
               <div className="university-footer">
@@ -147,11 +202,11 @@ const UniversityPartners = () => {
         >
           <div className="stats-grid">
             <div className="stat-item">
-              <div className="stat-number">8+</div>
-              <div className="stat-label">University Partners</div>
+              <div className="stat-number">19+</div>
+              <div className="stat-label">Brand Partners</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">50K+</div>
+              <div className="stat-number">100K+</div>
               <div className="stat-label">Students Reached</div>
             </div>
             <div className="stat-item">
