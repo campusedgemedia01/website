@@ -56,7 +56,7 @@ const UniversityPartners = () => {
       focus: "Competitive Exam Prep"
     },
     {
-      name: "PW Disha Publication",
+      name: "Disha Publication",
       type: "Educational Content",
       focus: "Study Materials"
     },
