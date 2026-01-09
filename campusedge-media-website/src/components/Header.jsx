@@ -20,7 +20,7 @@ const Header = () => {
   const navItems = [
     { name: 'Home', to: 'hero' },
     { name: 'Creators', to: 'creators' },
-    { name: 'Universities', to: 'universities' },
+    { name: 'Brands', to: 'universities' },
     { name: 'Services', to: 'services' },
     { name: 'About', to: 'about' },
     { name: 'Contact', to: 'contact' }
