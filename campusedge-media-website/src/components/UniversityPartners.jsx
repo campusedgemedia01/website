@@ -81,6 +81,11 @@ const UniversityPartners = () => {
       focus: "Quick Revision"
     },
     {
+      name: "PW (Physics Wallah)",
+      type: "Ed-Tech Platform",
+      focus: "Affordable Quality Education"
+    },
+    {
       name: "Unacademy",
       type: "Ed-Tech Platform",
       focus: "Online Learning"
@@ -202,7 +207,7 @@ const UniversityPartners = () => {
         >
           <div className="stats-grid">
             <div className="stat-item">
-              <div className="stat-number">19+</div>
+              <div className="stat-number">20+</div>
               <div className="stat-label">Brand Partners</div>
             </div>
             <div className="stat-item">
